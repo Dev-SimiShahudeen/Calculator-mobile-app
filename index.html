@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="All-in-One Online Calculator"> <!--a more specific title or terms -->
+  <meta name="description"
+    content="A comprehensive online calculator with various modes for basic math, science, finance, and more.">
+  <!--Consider a shorter, more concise description that better summarizes the calculator's key features.-->
+  <meta name="keywords" content="calculator, online calculator, simple calculator, free calculator, scientific calculator, Math calculator,
+     Online math tools, Calculation tools, Math solver, Free math tools">
+  <meta name="author" content="simi shahudeen">
+  <script src="https://kit.fontawesome.com/1edf73d561.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <!-- calculator section -->
+  <div class="container ">
+    <main class="calculator-section">
+      <header class="calculator-header flex-container">
+        <!-- flex-container : a descriptive class name to better reflect its purpose. -->
+        <nav class="calculator-navigation">
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+        <h1 class="calculator-heading">Basic Calculator</h1>
+        <button class="dark-mode-toggle dark-mode-btn" id="dark-mode-toggle">
+          <!-- old class="screenBg-change" more descriptive class name could be class="theme-toggle" or class="dark-mode-toggle" -->
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+      </header>
+      <div class="calculator-container">
+        <div class="screen"></div>
+        <div class="keypad-container">
+          <button class="key1 key">CE</button>
+          <button class="key2 key">XX</button>
+          <button class="key3 key">XX</button>
+          <button class="key4 key">AC</button>
+          <button class="key5 key">7</button>
+          <button class="key6 key">8</button>
+          <button class="key7 key">9</button>
+          <button class="key8 key">/</button>
+          <button class="key9 key">4</button>
+          <button class="key10 key">5</button>
+          <button class="key11 key">6</button>
+          <button class="key12 key">*</button>
+          <button class="key13 key">1</button>
+          <button class="key key1">2</button>
+          <button class="key key1">3</button>
+          <button class="key key1">-</button>
+          <button class="key key1">0</button>
+          <button class="key key1">.</button>
+          <button class="key key1">=</button>
+          <button class="key key1">+</button>
+          <button class="key key1">(</button>
+          <button class="key key1">)</button>
+          <button class="key key1">save</button>
+          <button class="key key1">show</button>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- history section: within aside tag : the content tangentially related to the main content -->
+    <!-- <aside class="history-section">
+      <h2 class="history-header flex-container">
+        <a href="" class="history"></a>
+        <a href="" class="memory"></a>
+      </h2>
+      <div class="history-container">
+        <h3 id>history</h2>
+        <dl>
+          <dt>grocery</dt>
+          <dd>2233</dd>
+        </dl> 
+      </div>
+    </aside> -->
+
+    <footer class="footer-container">
+
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
