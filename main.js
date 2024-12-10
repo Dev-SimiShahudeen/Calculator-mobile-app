@@ -14,7 +14,7 @@
 // ************END****************
 
 
-
+//*******************DARK MODE************************ 
 // reaching the element and storing
 const darkModeToggleBtn = document.getElementById("dark-mode-toggle");
 
@@ -23,31 +23,12 @@ darkModeToggleBtn.addEventListener("click", darkModeToggle);
 
 // functions
 function darkModeToggle() {
-  let currentBg = window.getComputedStyle(document.body).backgroundColor; //window's getComputedStyle method
+  let currentBg =
+    window.getComputedStyle(document.body).backgroundColor;
+  //window's getComputedStyle method
   if (currentBg === "rgba(0, 0, 0, 0)") {
     document.body.classList.toggle("dark-mode");
-    if (document.body.classList.contains("dark-mode")) {
-      console.log("dark-mode");
-      localStorage.setItem("dark-mode", "true");
-    }
-
-  }
-  else {
-    document.body.classList.remove("dark-mode");
-    if (!document.body.classList.contains("dark-mode")) {
-      console.log("light-mode");
-      localStorage.setItem("dark-mode", "false");
-    }
   }
 }
 
-function isDarkMode() {
-  let isDarkMode = localStorage.getItem("dark-mode");
-  console.log(isDarkMode);
-
-  if (isDarkMode) {
-
-  }
-}
-isDarkMode();
-
+// *************************************************
