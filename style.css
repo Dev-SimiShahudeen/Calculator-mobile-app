@@ -77,10 +77,9 @@ body {
 .calculator-container {
   height: 90%;
   width: 100%;
-  /* border: 1px solid saddlebrown; */
   padding: 2%;
   /* ****************padding interacts with width and 
-  height, and by using techniques like 
+  height,( even with %) and by using techniques like 
   box-sizing: border-box;,
    you can create more predictable and
     consistent layouts in your CSS. */
